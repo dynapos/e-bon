@@ -36,10 +36,30 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=1779058505');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=2457451887');
       });
     }
   </script>
-  <script src="main.dart.js" type="application/javascript"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <!-- Firebase Configuration -->
+  <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyChjfgAAjaM6DG6m3Sknj7_VziCSb14wa8",
+        authDomain: "dynapos-ebon.firebaseapp.com",
+        databaseURL: "https://dynapos-ebon.firebaseio.com",
+        projectId: "dynapos-ebon",
+        storageBucket: "dynapos-ebon.appspot.com",
+        messagingSenderId: "502661389298",
+        appId: "1:502661389298:web:396104ac2b4953fe15296b",
+        measurementId: "G-T4DHZPG0NK",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-storage.js"></script>
+  <script defer src="main.dart.js" type="application/javascript"></script>
+
 </body>
 </html>
